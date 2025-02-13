@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+  <body>
+    <main>
+      <div class="container_main">
+        <h1>Movie Ticketing App</h1>
+
+        <div class="container_movie_images">
+          <button id="prev" class="nav-btn">&lt;</button>
+          <div class="image_wrapper"></div>
+          <button id="next" class="nav-btn">&gt;</button>
+
+        </div>
+        <div class="container_selectors">
+
+          <div class="container_select-location">
+            <label for="select-location">Location</label>
+            <select name="select-location" id="select-location">
+              <option disabled selected value>- select option -</option>
+              <option value="Mall of Asia">Mall of Asia</option>
+              <option value="Mall of Europe">Mall of Europe</option>
+              <option value="Mall of America">Mall of America</option>
+              <option value="Mall of Antartica">Mall of Antartica</option>
+            </select>
+          </div>
+
+          <div class="container_select_movie">
+            <label for="select-movie">Movie</label>
+            <select name="select-movie" id="select-movie" disabled>
+              <option disabled selected value>- select option -</option>
+              <option value="movie1">Movie 1</option>
+              <option value="movie2">Movie 2</option>
+              <option value="movie3">Movie 3</option>
+              <option value="movie4">Movie 4</option>
+              <option value="movie5">Movie 5</option>
+              <option value="movie6">Movie 6</option>
+            </select>
+          </div>
+
+          <div class="container_select_date">
+            <label for="select-date">Select Date:</label>
+            <input type="date" id="select-date" disabled />
+          </div>
+
+          <div class="container_select_time">
+            <label for="select-time">Select Time:</label>
+            <select id="select-time" disabled>
+                <option disabled selected value>- select option -</option>
+                <option value="10:00">10:00 AM</option>
+                <option value="12:00">12:00 PM</option>
+                <option value="14:00">02:00 PM</option>
+                <option value="16:00">04:00 PM</option>
+                <option value="18:00">06:00 PM</option>
+                <option value="20:00">08:00 PM</option>
+                <option value="22:00">10:00 PM</option>
+            </select>
+        </div>
+      </div>
+
+      <div class="container_summary">
+      </div>
+
+
+      <div class="container_movie_cinema">
+
+        <div class="screen">Screen</div>
+
+        <div class="container_seats">
+            <button class="seat">A1</button>
+            <button class="seat">A2</button>
+            <button class="seat">A3</button>
+            <button class="seat">A4</button>
+            <button class="seat">A5</button>
+            <button class="seat">A6</button>
+            <button class="seat">A7</button>
+            <button class="seat">A8</button>
+            <button class="seat">A9</button>
+            <button class="seat">A10</button>
+            <button class="seat">A11</button>
+            <button class="seat">B1</button>
+            <button class="seat">B2</button>
+            <button class="seat">B3</button>
+            <button class="seat best-seat">B4</button>
+            <button class="seat best-seat">B5</button>
+            <button class="seat best-seat">B6</button>
+            <button class="seat best-seat">B7</button>
+            <button class="seat best-seat">B8</button>
+            <button class="seat">B9</button>
+            <button class="seat">B10</button>
+            <button class="seat">B11</button>
+            <button class="seat">C1</button>
+            <button class="seat">C2</button>
+            <button class="seat">C3</button>
+            <button class="seat best-seat">C4</button>
+            <button class="seat best-seat">C5</button>
+            <button class="seat best-seat">C6</button>
+            <button class="seat best-seat">C7</button>
+            <button class="seat best-seat">C8</button>
+            <button class="seat">C9</button>
+            <button class="seat">C10</button>
+            <button class="seat">C11</button>
+        </div>
+    </div>
+
+      <div class="container_seats_info">
+        <div class="seat-legend">
+            <div><span class="legend-box available"></span> Available</div>
+            <div><span class="legend-box taken"></span> Taken</div>
+            <div><span class="legend-box selected"></span> Selected</div>
+            <div><span class="legend-box best-seat"></span> Best Seat</div>
+        </div>
+      </div>
+
+      <div class="container_order_summary">
+        <div class="order_summary">
+            <div class="num_selected_seats"><strong>Seats Selected:</strong> </div>
+            <div class="total_amount"><strong>Total Price:</strong> </div>
+            <button class="checkout_button">Check Out</button>
+        </div>
+      </div>
+
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
